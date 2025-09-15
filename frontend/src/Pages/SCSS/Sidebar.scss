@@ -1,0 +1,66 @@
+.side-over {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  &.show {
+    z-index: 10;
+  }
+
+  .side-menu {
+    display: none;
+    position: absolute;
+    width: 60vw;
+    height: 100%;
+    background: rgb(83, 82, 82);
+    top: 0;
+    z-index: 1000;
+    padding: 20px 0 0 10px;
+    .s-btn {
+      border: none;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      height: 44px;
+      font-size: 30px;
+      &:hover {
+        color: grey;
+      }
+      &.active {
+        color: grey;
+      }
+    }
+  }
+  .overlay {
+    display: none;
+    width: 100vw;
+    position: absolute;
+    height: 100%;
+    background-color: rgba(35, 35, 36, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 900;
+  }
+}
+
+@media (max-width: 720px) {
+  .overlay.show {
+    display: block;
+  }
+  .side-menu {
+    display: block !important;
+    left: -450px;
+    transition: left 0.5s ease;
+  }
+  .side-menu.show {
+    left: 0;
+  }
+}
+@media (max-width:400px) {
+  .side-menu{
+    width:70vw !important;
+  }
+}

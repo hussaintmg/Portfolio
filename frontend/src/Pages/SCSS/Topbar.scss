@@ -1,0 +1,102 @@
+.Topbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  .h-btn {
+    width: 225px;
+    height: 200px;
+    margin: -35px 0 0 20px;
+    background: transparent;
+    overflow: hidden;
+    border: none;
+    img {
+      width: 250px;
+      height: 250px;
+      margin: -20px 0 0 -20px;
+      cursor: pointer;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: -30px 0 0 0;
+    gap: 2%;
+    .btn {
+      border: none;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      height: 44px;
+      font-size: 30px;
+      text-decoration: none;
+      &:hover {
+        color: grey;
+      }
+      &.active {
+        color: grey;
+      }
+    }
+  }
+  .hamburger {
+    display: none;
+    font-size: 35px;
+    margin: 0;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+@media (max-width: 720px) and (min-width: 300px) {
+  .Topbar {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    .h-btn {
+      margin: 0;
+      width: 50%;
+      height: 50%;
+      img {
+        width: 170px;
+        height: 170px;
+      }
+    }
+    .menu {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+}
+@media (max-width: 300px) {
+  .Topbar {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    .h-btn {
+      margin: 0;
+      width: 50%;
+      height: 50%;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .menu {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+}

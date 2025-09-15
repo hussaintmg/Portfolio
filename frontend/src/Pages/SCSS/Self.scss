@@ -1,0 +1,16 @@
+.custom-class {
+  color: white;
+  margin: -6cm 0 0 2cm;
+  font-size: 30px;
+  width: 60vw;
+  .name {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1320px) { .custom-class { width: 62vw; font-size: 22px; margin: -7cm 0 0 1cm; .name { font-size: 40px; }} }
+@media (max-width: 1201px) { .custom-class { width: 62vw; font-size: 22px; margin: -6cm 0 0 1cm; .name { font-size: 40px; }} }
+@media (max-width: 950px) { .custom-class { width: 60vw; font-size: 18px; margin: -4cm 0 0 1cm; .name { font-size: 35px; }} }
+@media (max-width: 700px) { .custom-class { width: 55vw; font-size: 17px; margin: -4cm 0 0 1cm; .name { font-size: 30px; }} }
+@media (max-width: 650px) { .custom-class { width: 91vw; font-size: 18px; margin: 0 0 0 0.5cm; .name { font-size: 34px; }} }
+@media (max-width: 445px) { .custom-class { width: 91vw; font-size: 13px; margin: 0 0 0 0.5cm; .name { font-size: 25px; }} }
+@media (max-width: 330px) { .custom-class { width: 91vw; font-size: 13px; margin: 0 0 0 0.5cm; .name { font-size: 23px; }} }
