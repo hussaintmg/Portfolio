@@ -16,7 +16,7 @@ export const MainDataProvider = ({ children }) => {
   const [AddressI, setAddressI] = useState(null);
   const [PhoneIcon, setPhoneIcon] = useState(null);
   const [PhoneNumber, setPhoneNumber] = useState(null);
-  const [dataLoaded, setDataLoaded] = useState(false);
+  const [dataLoaded, setDataLoaded] = useState(true);
   const [socials, setSocials] = useState(null);
 
   const apiUrl = process.env.REACT_APP_BACKEND_SERVER;
