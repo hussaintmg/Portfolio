@@ -1,0 +1,102 @@
+.SM-page {
+  padding: 0.7cm;
+  div {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.5cm;
+      th,
+      td {
+        border: 1px solid #333;
+      }
+      thead {
+        tr {
+          background-color: rgb(16, 87, 218);
+          font-size: 1.5rem;
+          text-align: center;
+          color: white;
+          font-weight: 800;
+          height: 2cm;
+        }
+      }
+      tbody {
+        height: 1.5cm;
+        .row-blue {
+          background-color: rgb(147, 185, 255);
+        }
+        .row-white {
+          background-color: white;
+        }
+        .row-blue,
+        .row-white {
+          font-size: 1.5rem;
+          text-align: center;
+          padding: 0.2cm;
+          td {
+            input {
+              width: 90%;
+              border-radius: 8px;
+              font-size: 1rem;
+              background: white;
+              padding: 0.2cm;
+            }
+            .input {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 5cm;
+              margin-top: 0.2cm;
+              button {
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+                margin: 0.2cm;
+                background: white;
+                &:hover {
+                  background: rgb(214, 210, 210) smoke;
+                }
+                img {
+                  width: 100px;
+                  height: 100px;
+                  object-fit: contain;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .New-data-entry {
+      width: 100%;
+      padding: 0.8cm;
+      input {
+        width: 80%;
+        height: 2cm;
+        padding: 0.2cm 0.5cm;
+        display: block;
+        margin: 0.3cm 0;
+        font-size: 1.3rem;
+        border-radius: 10px;
+      }
+    }
+    .New-data-btn {
+      cursor: pointer;
+      background-color: rgb(75, 118, 199);
+      color: white;
+      padding: 0.5cm 1cm;
+      border: none;
+      border-radius: 5px;
+      font-size: larger;
+      margin: 1cm 0 0 40%;
+      transition: all 0.2s ease;
+      opacity: 1;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        transform: scale(0.999);
+      }
+    }
+  }
+}

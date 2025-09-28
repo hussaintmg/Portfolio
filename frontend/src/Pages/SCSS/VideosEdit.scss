@@ -1,0 +1,165 @@
+.videos-edit {
+  fieldset {
+    padding: 0.6cm;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #374151;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+
+      thead {
+        background-color: #6b6a6a;
+        tr {
+          th {
+            border: 1px solid #97979a;
+            padding: 0.75rem;
+            text-align: left;
+            font-size: 1.3rem;
+            color: #e2e4e8;
+          }
+        }
+      }
+
+      td {
+        vertical-align: middle;
+      }
+    }
+
+    .preview-cell {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem;
+
+      .preview-btn {
+        width: 120px;
+        height: 120px;
+        border: 1px solid #d1d5db;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        background: #f3f4f6;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .update-btn {
+        background: #10b981;
+        color: #fff;
+        padding: 0.4rem 0.9rem;
+        border-radius: 0.5rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s ease;
+
+        &:hover {
+          background: #059669;
+        }
+      }
+    }
+
+    .delete-btn {
+      background: #ef4444;
+      color: #fff;
+      padding: 0.4rem 0.9rem;
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: #dc2626;
+      }
+    }
+
+    .up-vid-more {
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      width: 100px;
+      height: 100px;
+      i {
+        font-size: 50px;
+      }
+      &:hover {
+        background: #b8b6bc;
+      }
+    }
+
+    .new-videos-grid {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .new-vid {
+      position: relative;
+      display: inline-block;
+
+      video {
+        width: 120px;
+        height: 120px;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        object-fit: contain;
+      }
+
+      .remove-btn {
+        position: absolute;
+        top: 5px;
+        left: 92px;
+        background: rgba(255, 0, 0, 0.8);
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0 6px 2px 6px;
+        border-radius: 50%;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      &:hover .remove-btn {
+        opacity: 1;
+      }
+    }
+
+    .upload-btn {
+      background: #8b5cf6;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.5rem;
+      margin: 0 1cm;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: #7c3aed;
+      }
+    }
+  }
+}

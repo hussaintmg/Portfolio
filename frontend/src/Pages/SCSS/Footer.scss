@@ -1,0 +1,131 @@
+.footer {
+  width: 96.25%;
+  height: auto;
+  background: transparent;
+  border: 0.7px solid white;
+  border-radius: 15px;
+  margin: 7.54375vw 0 1cm 1.875%;
+  padding: 1.6535625vw;
+  background: rgb(31, 30, 30);
+  .logo {
+    margin: 0 0 0 3.54375vw;
+    width: 13.75vw;
+    height: 13.75vw;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .txt {
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    div {
+      display: block;
+      flex: 1;
+      height: 100%;
+      margin-left: 15%;
+      h2 {
+        font-size: 2.7vw;
+      }
+      .content {
+        display: flex;
+        margin-left: 0;
+        flex-direction: column;
+        gap: 8px;
+
+        .item {
+          display: flex;
+          align-items: center;
+          margin: 2% 0 0 2%;
+
+          .img {
+            max-width: 1.875vw;
+            max-height: 1.875vw;
+            width: 1.875vw;
+            height: 1.875vw;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 2vw;
+              height: 2vw;
+              object-fit: cover;
+              display: block;
+            }
+            &.circle {
+              border-radius: 50%;
+            }
+            &.square {
+              border-radius: 5px;
+            }
+          }
+
+          span {
+            margin-left: 10px;
+            font-size: 1.4375vw;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .item {
+    .img {
+      max-width: 3.125vw !important;
+      max-height: 3.125vw !important;
+      width: 3.125vw !important;
+      height: 3.125vw !important;
+      img {
+        width: 80% !important;
+        height: 80% !important;
+      }
+    }
+    span {
+      font-size: 2.1875vw !important;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .txt {
+    display: block !important;
+    div {
+      display: block !important;
+      height: auto !important;
+      margin: 0.5% 0 0.5% 5% !important;
+      h2 {
+        font-size: 5.5vw !important;
+      }
+      .content {
+        margin-left: 0 !important;
+        .item {
+          display: flex !important;
+          align-items: center;
+          .img {
+            max-width: 6.875vw !important;
+            max-height: 6.875vw !important;
+            height: 6.875vw !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            img {
+              max-width: 7.875vw !important;
+              width: 7.875vw !important;
+              max-height: 7.875vw !important;
+              height: 7.875vw !important;
+              object-fit: cover;
+            }
+          }
+          span {
+            font-size: 3.4375vw !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.title-edit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  input {
+    flex: 1;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #d1d5db; // gray-300
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+
+    &::placeholder {
+      color: #9ca3af; // gray-400
+    }
+
+    &:focus {
+      border-color: #3b82f6; // blue-500
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    }
+  }
+
+  button {
+    background: #3b82f6; // blue-500
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: #2563eb; // blue-600
+    }
+
+    &:active {
+      background: #1d4ed8; // blue-700
+    }
+  }
+}

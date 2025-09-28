@@ -1,0 +1,131 @@
+.log-page {
+  form {
+    width: 100%;
+    padding: 3vw;
+    text-align: center;
+
+    .input {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin: 3vw 0;
+      position: relative;
+
+      input {
+        width: 60%;
+        height: 1cm;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        padding: 0.3cm 0.5cm;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        background: transparent;
+        outline: none;
+        color: white;
+
+        &:focus {
+          box-shadow: 0px 4px 20px rgba(0, 255, 255, 0.411);
+          border-bottom: 2px solid #0f8f44;
+        }
+
+        &:focus + label {
+          top: -12px;
+          font-size: 13px;
+          color: #0f8f44;
+          background: rgba(0, 0, 0, 0.438);
+          padding: 0 0.1cm;
+        }
+      }
+
+      label {
+        position: absolute;
+        left: 21%;
+        top: 8px;
+        color: #aaa;
+        pointer-events: none;
+        transition: 0.3s ease;
+        font-size: 16px;
+      }
+
+      label.active {
+        top: -12px;
+        font-size: 13px;
+        color: #0f8f44;
+        background: rgba(0, 0, 0, 0.438);
+        padding: 0 0.1cm;
+      }
+
+      .show-password {
+        position: absolute;
+        left: 78%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #aaa;
+        transition: 0.3s ease;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .submit {
+      width: 3cm;
+      height: 1cm;
+      background-color: #0f8f44ff;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease-out;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-top: 1.5cm;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+  .login{
+    width:100%;
+    text-align: center;
+    button{
+      width:80%;
+      height: 1.5cm;
+      background-color: #0f8f44ff;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease-out;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 700;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+@media (max-width:900px) {
+  .show-password{
+    left:76% !important;
+  }
+}
+@media (max-width:450px) {
+  .show-password{
+    left:74% !important;
+  }
+}
+@media (max-width:300px) {
+  .show-password{
+    left:72% !important;
+    font-size: 0.7rem !important;
+  }
+}

@@ -1,0 +1,276 @@
+.heading {
+  div {
+    background: rgb(36, 173, 74);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.cont-st {
+  margin: 2cm 0 0 1.875vw;
+  width: 95%;
+  text-align: center;
+
+  .st {
+    color: white;
+    display: inline-block;
+
+    .name {
+      color: rgb(36, 173, 74);
+      font-size: 3rem;
+      margin: 1cm 0 0.5cm 0;
+      text-align: left;
+    }
+
+    ul {
+      margin: 0 0 0 2.5cm;
+      text-align: left;
+
+      li {
+        font-size: 2rem;
+        font-weight: 300;
+        color: rgb(211, 204, 204);
+        margin: 0.3cm 0 0 0;
+
+        .bold {
+          font-size: 2.2rem;
+          font-weight: 900;
+          color: white;
+          margin: 0 0.3cm 0 0;
+        }
+      }
+    }
+  }
+}
+
+.cont-so {
+  margin: 200px 1.875vw 4cm 0;
+  width: 95%;
+  text-align: right;
+
+  .so {
+    color: white;
+    display: inline-block;
+
+    .name {
+      color: rgb(36, 173, 74);
+      font-size: 3rem;
+      margin: 1cm 0 0.5cm 0;
+      text-align: left;
+    }
+
+    ul {
+      margin: 0 0 0 2.5cm;
+      text-align: left;
+
+      li {
+        font-size: 2rem;
+        font-weight: 300;
+        color: rgb(211, 204, 204);
+        margin: 0.3cm 0 0 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .cont-st {
+    margin: 1.2cm 0 0 1.875vw;
+
+    .st {
+      margin-top: 0;
+
+      .name {
+        font-size: 2.3rem;
+      }
+
+      ul {
+        margin: 0 0 0 1cm;
+
+        li {
+          font-size: 1.5rem;
+          margin: 0.2cm 0 0 0;
+
+          .bold {
+            font-size: 1.7rem;
+            margin: 0 0.2cm 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .cont-so {
+    margin: 300px 1.875vw 4cm 0;
+
+    .so {
+      .name {
+        font-size: 2.3rem;
+      }
+
+      ul {
+        margin: 0 0 0 1cm;
+
+        li {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .cont-st {
+    margin: 1cm 0 0 1.875vw;
+
+    .st {
+      .name {
+        font-size: 2rem;
+      }
+
+      ul {
+        margin: 0 0 0 0.5cm;
+
+        li {
+          font-size: 1.2rem;
+
+          .bold {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .cont-so {
+    margin: 250px 1.875vw 3cm 0;
+
+    .so {
+      .name {
+        font-size: 2rem;
+      }
+
+      ul {
+        margin: 0 0 0 0.5cm;
+
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .cont-st {
+    .st {
+      .name {
+        font-size: 1.5rem;
+      }
+
+      ul {
+        margin: 0 0 0 0.5cm;
+
+        li {
+          font-size: 1rem;
+
+          .bold {
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .cont-so {
+    margin: 200px 1.875vw 3cm 0;
+
+    .so {
+      .name {
+        font-size: 1.5rem;
+      }
+
+      ul {
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .floating-icons .icon {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading {
+    div {
+      div {
+        h2 {
+          font-size: 35px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 270px) {
+  .cont-st {
+    .st {
+      .name {
+        font-size: 1rem;
+      }
+
+      ul {
+        margin: 0 0 0 0.5cm;
+
+        li {
+          font-size: 0.5rem;
+
+          .bold {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .cont-so {
+    margin: 150px 1.875vw 3cm 0;
+  }
+
+  .heading {
+    div {
+      div {
+        h2 {
+          font-size: 30px !important;
+        }
+      }
+    }
+  }
+}
+
+.floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+
+  .icon {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: top 1s ease, left 1s ease, transform 1s ease;
+  }
+}
